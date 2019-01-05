@@ -1,0 +1,8 @@
+.movie-list-item {
+    border: transparent;
+    border-radius: 10px 10px 10px 10px;
+}
+.movie-list-item:hover {
+    background-color: blue;
+    color: white;
+}

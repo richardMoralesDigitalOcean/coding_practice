@@ -1,0 +1,13 @@
+<div class = "movie-list-container">
+  <div class="movie-list-display-container">
+    <app-movie-counter [numMovies]="numMovies"></app-movie-counter> 
+    <app-movie-display [movies$]="movies$"></app-movie-display>
+    <div style ="display: flex;">
+      <input #newMovieInp type="text" />
+      <button type="button" (click)="addMovie(newMovieInp.value)">Add Movie</button>
+    </div>
+  </div>
+  <div class="movie-detail-display-container">
+    <app-movie-detail-display></app-movie-detail-display>
+  </div>
+</div>

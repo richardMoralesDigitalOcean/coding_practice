@@ -1,0 +1,5 @@
+<div *ngFor="let movie of movies$ | async; let i = index">
+    <li class="movie-list-item">
+      <span type="button" (click)="selectMovie(movie)">{{i + '. ' + movie.title}}</span>
+    </li>
+</div>
